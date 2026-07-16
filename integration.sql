@@ -1,0 +1,8 @@
+CREATE OR REPLACE NOTIFICATION INTEGRATION FLOWBRIDGE_AZURE_EVENT_INT
+  ENABLED = TRUE
+  TYPE = QUEUE
+  NOTIFICATION_PROVIDER = AZURE_STORAGE_QUEUE
+  AZURE_STORAGE_QUEUE_PRIMARY_URI=
+  'https://flowbridgestorgar.queue.core.windows.net/snowpipe-trigger'
+  AZURE_TENANT_ID = '227c70f7-614a-498c-b077-ec70c446117b'
+  COMMENT = 'Notification integration for Snowpipe auto-ingest';;

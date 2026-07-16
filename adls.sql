@@ -1,0 +1,8 @@
+USE DATABASE FLOW_DB;
+USE SCHEMA PUBLIC;
+
+
+LIST @ADLS_STAGE;
+
+
+desc storage integration AZURE_FLOWBRIDGE_INT;
